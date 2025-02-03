@@ -1,0 +1,222 @@
+
+img{
+   width: 100%;
+   max-height:60%;
+}
+#page1 p{
+padding-top:250px ;
+color:rgb(255, 255, 255);
+}
+#form {
+    width:100%;
+}
+#flights{
+    color:black;
+    padding-top: 0px;
+}
+#flights:hover{
+    border-bottom:1px black solid;
+}
+#stays{
+    color:black;
+    padding-top: 0px;
+}
+#stays:hover{
+    border-bottom:1px black solid;
+}
+#multi{
+    margin-top:44px;
+}
+#select{
+    margin:8px;
+}
+#select-2{
+    margin:8px;
+}
+#select-3{
+    margin:8px;
+    border:rgba(128, 128, 128, 0.26) 0.5px solid;
+    max-width:100%;
+    padding:6px;
+}
+#select-4{
+    margin:8px;
+    border:rgba(128, 128, 128, 0.26) 0.5px solid;
+    max-width: 100%;
+    padding:6px;
+}
+#select-5{
+    margin:8px;
+}
+.container .btn{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+.page2{
+    background-color: aliceblue;
+}
+
+.welcome{
+    margin-top: 60px;
+}
+#grow{
+    font-size:30px;
+}
+#istanbul img{
+ max-width: 20%;
+ max-height:20%;
+}
+.page3 .container {
+    margin-top:100px;
+}
+#hotels{
+    max-width:100%;
+    height: 100%;
+}
+.page3 .position-absolute{
+  margin-top: -200px;
+  font-size: 40px;
+  color:white;
+  font-weight:700;
+}
+#search-flight2{
+    font-size: small;
+    margin-left: -60px;
+}
+#hotels-span{
+    font-size: 10px;
+    padding-top:60px;
+}
+#reviewbox-1{
+  box-shadow: 10px 10px 1px rgba(46, 180, 107, 0.651);
+  font-size:20px;
+  border:0.5px solid rgba(0, 0, 0, 0.082);
+  border-radius:15px
+}
+#che{
+    display:none;
+}
+#check-button{
+    display:inline-block;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(79, 167, 137);
+    border-radius: 3px;
+    padding:3px 13px;
+}
+#content{
+    display: none;
+}
+#che:checked ~ #content{
+    display:block;
+}
+#che:checked ~ label{
+    display:none;
+}
+#che2{
+    display:none;
+}
+#check-button{
+    display:inline-block;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(79, 167, 137);
+    border-radius: 3px;
+    padding:3px 13px;
+}
+#content{
+    display: none;
+}
+#che2:checked ~ #content{
+    display:block;
+}
+#che2:checked ~ label{
+    display:none;
+}
+#che3{
+    display:none;
+}
+#check-button{
+    display:inline-block;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(79, 167, 137);
+    border-radius: 3px;
+    padding:3px 13px;
+}
+#content{
+    display: none;
+}
+#che3:checked ~ #content{
+    display:block;
+}
+#che3:checked ~ label{
+    display:none;
+}
+#rating,#rating2,#rating3,#rating4,#rating5{
+    display:none;
+}
+#ratings-css{
+    color:rgb(255, 187, 0);
+}
+#ratings-css input + label{
+    cursor:pointer;
+}
+#ratings-css input:checked + label~ label{
+    color:#838383
+}
+#rating6,#rating7,#rating8,#rating9,#rating10{
+    display:none;
+}
+#ratings-css2{
+    color:rgb(255, 187, 0);
+}
+#ratings-css2 input + label{
+    cursor:pointer;
+}
+#ratings-css2 input:checked + label~ label{
+    color:#838383
+}
+#rating11,#rating12,#rating13,#rating14,#rating15{
+    display:none;
+}
+#ratings-css3{
+    color:rgb(255, 187, 0);
+}
+#logo{
+    height:20px;
+    width:20px;
+}
+#email{
+    background-color:rgb(119, 226, 185);
+    border-radius:10px;
+}
+p{
+    margin-bottom:6px;
+}
+#email-id{
+  width:50%;
+}
+#box{
+    height:100px;
+    width:100px;
+    margin-top:50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 5px solid rgb(10, 185, 133);
+    border-bottom: none;
+    background-color: #838383;
+}
+#box2{
+    height:100px;
+    width:100px;
+    background-color: black;
+    margin:50px;
+    margin-left:80px;
+    border-top-right-radius: 30px;
+}
+#wood{
+    height:100px;
+    width:10px;
+    background-color:brown;
+}

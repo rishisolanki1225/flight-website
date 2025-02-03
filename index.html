@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+</head>
+<body>
+    <style>
+        
+img{
+   width: 100%;
+   max-height:60%;
+}
+#page1 p{
+padding-top:250px ;
+color:rgb(255, 255, 255);
+}
+#form {
+    width:100%;
+}
+#flights{
+    color:black;
+    padding-top: 0px;
+}
+#flights:hover{
+    border-bottom:1px black solid;
+}
+#stays{
+    color:black;
+    padding-top: 0px;
+}
+#stays:hover{
+    border-bottom:1px black solid;
+}
+#multi{
+    margin-top:44px;
+}
+#select{
+    margin:8px;
+}
+#select-2{
+    margin:8px;
+}
+#select-3{
+    margin:8px;
+    border:rgba(128, 128, 128, 0.26) 0.5px solid;
+    max-width:100%;
+    padding:6px;
+}
+#select-4{
+    margin:8px;
+    border:rgba(128, 128, 128, 0.26) 0.5px solid;
+    max-width: 100%;
+    padding:6px;
+}
+#select-5{
+    margin:8px;
+}
+.container .btn{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+.page2{
+    background-color: aliceblue;
+}
+
+.welcome{
+    margin-top: 60px;
+}
+#grow{
+    font-size:30px;
+}
+#istanbul img{
+ max-width: 20%;
+ max-height:20%;
+}
+.page3 .container {
+    margin-top:100px;
+}
+#hotels{
+    max-width:100%;
+    height: 100%;
+}
+.page3 .position-absolute{
+  margin-top: -200px;
+  font-size: 40px;
+  color:white;
+  font-weight:700;
+}
+#search-flight2{
+    font-size: small;
+    margin-left: -60px;
+}
+#hotels-span{
+    font-size: 10px;
+    padding-top:60px;
+}
+#reviewbox-1{
+  box-shadow: 10px 10px 1px rgba(46, 180, 107, 0.651);
+  font-size:20px;
+  border:0.5px solid rgba(0, 0, 0, 0.082);
+  border-radius:15px
+}
+#che{
+    display:none;
+}
+#check-button{
+    display:inline-block;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(79, 167, 137);
+    border-radius: 3px;
+    padding:3px 13px;
+}
+#content{
+    display: none;
+}
+#che:checked ~ #content{
+    display:block;
+}
+#che:checked ~ label{
+    display:none;
+}
+#che2{
+    display:none;
+}
+#check-button{
+    display:inline-block;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(79, 167, 137);
+    border-radius: 3px;
+    padding:3px 13px;
+}
+#content{
+    display: none;
+}
+#che2:checked ~ #content{
+    display:block;
+}
+#che2:checked ~ label{
+    display:none;
+}
+#che3{
+    display:none;
+}
+#check-button{
+    display:inline-block;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(79, 167, 137);
+    border-radius: 3px;
+    padding:3px 13px;
+}
+#content{
+    display: none;
+}
+#che3:checked ~ #content{
+    display:block;
+}
+#che3:checked ~ label{
+    display:none;
+}
+#rating,#rating2,#rating3,#rating4,#rating5{
+    display:none;
+}
+#ratings-css{
+    color:rgb(255, 187, 0);
+}
+#ratings-css input + label{
+    cursor:pointer;
+}
+#ratings-css input:checked + label~ label{
+    color:#838383
+}
+#rating6,#rating7,#rating8,#rating9,#rating10{
+    display:none;
+}
+#ratings-css2{
+    color:rgb(255, 187, 0);
+}
+#ratings-css2 input + label{
+    cursor:pointer;
+}
+#ratings-css2 input:checked + label~ label{
+    color:#838383
+}
+#rating11,#rating12,#rating13,#rating14,#rating15{
+    display:none;
+}
+#ratings-css3{
+    color:rgb(255, 187, 0);
+}
+#logo{
+    height:20px;
+    width:20px;
+}
+#email{
+    background-color:rgb(119, 226, 185);
+    border-radius:10px;
+}
+p{
+    margin-bottom:6px;
+}
+#email-id{
+  width:50%;
+}
+#box{
+    height:100px;
+    width:100px;
+    margin-top:50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 5px solid rgb(10, 185, 133);
+    border-bottom: none;
+    background-color: #838383;
+}
+#box2{
+    height:100px;
+    width:100px;
+    background-color: black;
+    margin:50px;
+    margin-left:80px;
+    border-top-right-radius: 30px;
+}
+#wood{
+    height:100px;
+    width:10px;
+    background-color:brown;
+
+}
+@media only screen and (min-width:200px) and (max-width:575px){
+    #page1 p{
+        padding-top:100px ;
+        font-size :15px !important;
+    }
+    #first-container{
+        margin-top:8px;
+    }
+    #flights{
+        font-size: 12px;
+        color:black;
+    }
+    #stays{
+        font-size: 12px;
+        color:black;
+    }
+    #city{
+        font-size:12px;
+    }
+    #select{
+        font-size: 10px; 
+    }
+    #select-2{
+        font-size: 10px;
+    }
+    #select-3{
+        font-size: 10px;
+    }
+    #select-4{
+        font-size: 10px;
+    }
+    #select-5{
+        font-size: 10px;
+    }
+    #page1 .welcome{
+        color:black;
+        font-size:10px;
+    } 
+    .container input{
+        font-size:10px;
+        max-height:30px;
+    }
+    .container .btn{
+        font-size:10px;
+        max-height:30px;
+    }
+    .welcome{
+        margin-top: 0px;
+    }
+    .welcome #main{
+        font-size:10px;
+    }
+    #grow{
+        font-size:20px;
+    }
+    #istanbul p{
+        font-size:12px;
+    }
+    #review-text{
+        font-size:10px;
+    }
+    .fs-6{
+        font-size: 8px !important;
+    }
+    #reviewbox-text{
+        font-size: 12px;
+    }
+    #reviewbox-1 p{
+        font-size: 10px;
+    }
+    label{
+        font-size:10px;
+    }
+    #news{
+        font-size:15px;
+    }
+    #box{
+      display:none;
+    }
+    #box2{
+        display:none;
+    }
+    #wood{display:none;
+    }
+    #email{
+        width:100%;
+    }
+}
+@media screen and (min-width:1000px){
+    #first-container{
+        margin-top: 40px;
+    }
+}
+    </style>
+    <section id="page1">
+        <img src="https://www.informalnewz.com/wp-content/uploads/2022/10/Flight-Ticket-Offer.jpg" class="object-fit-cover position-absolute" alt="...">
+        <p class="position-relative fs-2 text-center ">discover millions of affordable flights on ftg</p> 
+      <div class="container">
+            <form class="d-flex position-relative align-items-center" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+      </div>
+        <div id="first-container" class="container rounded-3 shadow-lg position-relative bg-white container-fluid  ">
+            <div class="row row-cols-lg-5 row-cols-md-3 m-2 row-cols-xs-3 ">
+                <div class="col ">
+                    <div class="d-flex">
+                    <div class="m-2"><span id="flights">flights </span> |</div>
+                    <div class="m-2"><span id="stays">stays</span></div>
+                </div>
+                <div class="d-flex align-items-end">
+               <div class="form-check  m-1">
+                <input type="radio" name="rishi" class="form-check-input" id="flexradiodefault">
+                <label for="flexradiodefault" class="form-check-label">
+                    <span id="city">one city</span>
+                </label>
+                </div>
+                <div class="form-check m-1 ">
+                <input type="radio" name="rishi" class="form-check-input" id="flexradiodefault" >
+                <label for="flexradiodefault" class="form-check-label ">
+                   <span id="city">two cities</span>
+                </label>
+               </div>
+            </div>
+            <div class="d-flex">
+        </div>
+               </div>
+
+                <div class="col ">
+                    <div id="multi" class="form-check ps-2">
+                        <input type="radio" class="form-check-input" name="rishi">
+                        <label for="flexradiodefault" class="form-check-label">
+                            <span id="city">multicities</span>
+                        </label>
+                       </div>
+                </div>
+                <div class="col ">
+                </div>
+                <div class="col">    
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row row-cols-lg-5 m-1" >
+                <div class="col "> 
+                    <select  id="select" class="form-select container-fluid align-items-center">
+               
+                    <option selected > from</option>
+                    <option>delhi </option>
+                    <option>t.n </option>
+                    <option>hyderabad</option>
+                    <option>goa </option>
+                    <option>pune</option>
+                    <option>mumbai </option>
+                    <option>noida </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                </select></div>
+                <div class="col">      
+               <select id="select-2" class="form-select container-fluid ">
+                    <option selected > to</option>
+                    <option>delhi </option>
+                    <option>t.n </option>
+                    <option>hyderabad</option>
+                    <option>goa </option>
+                    <option>pune</option>
+                    <option>mumbai </option>
+                    <option>noida </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                    <option>delhi </option>
+                </select>
+            </div>
+                <div class="col">  <input id="select-3" type="date"  class="rounded container-fluid"></div>
+                <div class="col"><input id="select-4" type="date" class="rounded container-fluid"></div>
+                <div class="col">     
+                      <select id="select-5" class="form-select container-fluid  align-items-center ">
+               
+                    <option selected >passenger,class</option>
+                    <option>1,economy</option>
+                    <option>2,economy</option>
+                    <option>3,economy</option>
+                    <option>4,economy </option>
+                    <option>5,economy</option>
+                    <option>6,economy</option>
+                    <option>7,economy</option>
+                    <option>8,economy </option>
+                    <option>1,business</option>
+                    <option>2,business </option>
+                    <option>3,business</option>
+                    <option>4,business</option>
+                    <option>5,business</option>
+                    <option>6,business </option>
+                    <option>7,business</option>
+                    <option>8,business</option>
+                   
+                </select></div>
+            </div>
+            <div class="d-flex justify-content-end">
+            <button id= "search-flight"class ="btn btn-primary "><i class="fa-solid fa-paper-plane px-1"></i> search flights</button>
+        </div>
+        </div>
+     
+</div>
+    </section>
+    <section class="page-2 container-fluid">
+        <div class=" container container-fluid" >
+            <div class="position-relative row">                                                                                      
+                <div class="  welcome">
+                    <p><b>welcome to flight ticket group</b></p>
+                    <P id="main">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam eligendi doloremque rem velit maiores sed qui natus. Veniam quod esse rem adipisci eveniet? Aut necessitatibus repellendus praesentium rem, dignissimos animi?
+                    Voluptate tempora, assumenda impedit provident suscipit harum beatae saepe natus excepturi dolores officiis. At dignissimos quidem doloremque incidunt deleniti velit molestias nihil, aliquid provident laborum et sed. Repudiandae, labore deleniti?
+                    Minima, quasi. Sed corporis, quam cum molestias dolorem ad vero recusandae, nobis ab soluta eveniet id quidem eligendi, mollitia ullam deserunt excepturi. Nihil deserunt omnis deleniti non quam animi expedita.
+                    </P>
+                    <p ID="grow"><b>Grow your Travel Business with FTG</b></p>
+                    <p>repudiandae necessitatibus, quidem odio atque doloremque quam sunt eius numquam in quibusdam ipsam aut illum unde.</p>
+                </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col ">
+              <div id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                <img  src="https://lh5.googleusercontent.com/p/AF1QipOCYsN_Hh8EXcHIvZJDtaEhlwB4ZqnRFOIHScuz=w540-h312-n-k-no" class="rounded-3 p-1">
+                <p class="px-1">istanbul,turkey</p>
+            </div>
+            <div id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                <img  src="https://lh5.googleusercontent.com/p/AF1QipML1hCHt74ry3frkJ7nZP4YVbH9FGgrmAfHERde=w540-h312-n-k-no" class="rounded-3 p-1">
+                <p class="px-1">malabar,maldives</p>
+            </div>
+            <div id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                <img  src="data:image/jpeg;base64,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" class="rounded-3 p-1">
+                <p class="px-1">london,uk</p>
+            </div>
+            </div>
+            <div class="col ">
+                <div  id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                    <img src="https://media.tatler.com/photos/6141d37b9ce9874a3e40107d/16:9/w_1280,c_limit/social_crop_sydney_opera_house_gettyimages-869714270.jpg" class="rounded-3 p-1">
+                    <p class="px-1">sydney,australia</p>
+                </div>
+                <div id="istanbul" class="d-flex shadow-lg  rounded mt-3">
+                    <img  src="https://q-xx.bstatic.com/xdata/images/city/608x352/977239.webp?k=c2409c69613bc168e54e0c4930e1436a0f378d7fe40d9c94f4a03595e0f423a8&o=" class="rounded-3 p-1">
+                    <p class="px-1">paris,france</p>
+                </div>
+                <div id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrCPgo7YbgpSSQWwjUFGx0fKLOaW23gzBZg&s" class="rounded-3 p-1">
+                    <p class="px-1">tokyo,japan</p>
+                </div>
+            </div>
+            <div class="col ">
+                <div id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                    <img  src="https://i.ytimg.com/vi/PLkzG4MAIWU/maxresdefault.jpg" class="rounded-3 p-1">
+                    <p class="px-1">baku,azerbaijan</p>
+                </div>
+                <div id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                    <img  src="https://www.civitatis.com/blog/wp-content/uploads/2023/03/miradores-nueva-york.jpg" class="rounded-3 p-1">
+                    <p class="px-1">new york</p>
+                </div>
+                <div id="istanbul" class="d-flex shadow-lg mt-3 rounded">
+                    <img  src="https://deih43ym53wif.cloudfront.net/dubai-palm-jumeirah-island-shutterstock_1291548640.jpg_3ab124c2b9.jpg" class="rounded-3 p-1">
+                    <p class="px-1">dubai,uae</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="page3">
+        <div class="container container-fluid">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-lg-5 mx-4 mb-2 shadow-lg px-0 mt-1"><img class="rounded-3 img-fluid " src="https://img.freepik.com/premium-photo/modern-dark-interior-design-airport_176873-18070.jpg">
+                    <div class=" d-flex justify-content-center
+                   "><p class="position-absolute">flights</p>
+                   <span id="hotels-span" class="position-absolute text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Aliquam cum dolore deleniti fugit porro possimus, minus iure. Alias est nihil vel enim </span>
+                   <div class="d-flex align-items-end">
+                    <button id= "search-flight2"class ="btn btn-primary position-absolute "><i class="fa-solid fa-paper-plane "></i> search flights</button>
+                </div>
+                   </div>
+                </div>
+                <div class="col-lg-5 mx-4 px-0 shadow-lg mb-2">
+                    <img id="hotels" class="rounded-3 img-fluid " src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201804171343423204-b5b4db22ef0911ed81570a58a9feac02.jpg">
+                    <div class=" d-flex justify-content-center
+                    "><p class="position-absolute">hotels
+                        
+                    </p>
+                    <span id="hotels-span" class="position-absolute text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Aliquam cum dolore deleniti fugit porro possimus, minus iure. Alias est nihil vel enim </span>
+                    <div class="d-flex align-items-end">
+                        <button id= "search-flight2"class ="btn btn-primary position-absolute "><i class="fa-solid fa-paper-plane "></i> search hotels</button>
+                     </div>  
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container container-fluid">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <h2>
+                            Reviews
+                        </h2>
+                        <P id="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </P>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="reviewbox-1"class="col  px-1 mx-3 ">
+                      
+                        <input type="checkbox" name="" id="che">
+                             <p id="reviewbox-text"><b> "a real sense of community nurtured"</b></p>
+                             <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapie nobisi nam doloribus atque, consequuntur officiis illum!......</p>
+                             <div id="content">
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor repellendus iillo ratione? Distinctio voluptates qui, placeat optio vero sint aliquam provident, fugiat laboriosam minus earum maxime totam, nam minima?    
+                             </p>
+                             <label for="che" id="check-button">show less </label>
+                     </div>
+                     <label for="che" id="check-button">read more </label>
+                     <div id="ratings-css">
+                     <input type="radio" name="rating" id="rating">
+                     <label for="rating" class="fa fa-star"></label>
+                     <input type="radio" name="rating" id="rating2">
+                     <label for="rating2" class="fa fa-star"></label>
+                     <input type="radio" name="rating" id="rating3">
+                     <label for="rating3" class="fa fa-star"></label>
+                     <input type="radio" name="rating" id="rating4">
+                     <label for="rating4" class="fa fa-star"></label>
+                     <input type="radio" name="rating" id="rating5">
+                     <label for="rating5" class="fa fa-star"></label>
+                    </div>
+                    <p> <b>rishi</b><br></P>
+                        <div class="d-flex">
+                       <span><img id="logo" class="mx-2" src="pngwing.com (7).png"></span>
+                       <a href="https://www.google.com/search?sca_esv=3ebb6c1601f0960d&sxsrf=ADLYWIJFMLqoHHYeQDEELju0qDmPcn7guw:1735018022183&q=himalayas&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J5m2RNdZ7TqBBDB_EAGU4N1KmHmEYoxnGi716uJtDrT4BejLFemESLcx0_AxYgHtu8eacEg_PQPBKp4WA_phPl-jYzFD0o48MpfGkty9-I6wrDPuX3Nge7TBIQMA-QMTzM83rds08HKway8tTUMlCatoUAtHMlWN5gA_8qus_baBSuN6VQ&sa=X&ved=2ahUKEwiig5Dn1b-KAxVzR2wGHcNrC-AQ0pQJegQIFBAB&biw=1920&bih=953&dpr=1"> <p class="">google<p></a>
+                       </div>
+                        <img class="p-2 rounded-4"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRBFsxebOTDTsC16QrzrpCZpW4dzcbGvHxQg&s">
+                    
+                     </div>
+                    
+                    <div id="reviewbox-1"class="col px-1 mx-3 ">
+                      
+                   <input type="checkbox" name="" id="che2">
+                        <p id="reviewbox-text"><b> "a real sense of community nurtured"</b></p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapie nobisi nam doloribus atque, consequuntur officiis illum!......</p>
+                        <div id="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor repellendus illo ratione? Distinctio voluptates qui, placeat optio vero sint aliquam provident, fugiat laboriosam minus earum maxime totam, nam minima?    
+                        </p>
+                        <label for="che2" id="check-button">show less </label>
+                </div>
+                <label for="che2" id="check-button">read more </label>
+                <div id="ratings-css2">
+                    <input type="radio" name="rating1" id="rating6">
+                    <label for="rating6" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating7">
+                    <label for="rating7" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating8">
+                    <label for="rating8" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating9">
+                    <label for="rating9" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating10">
+                    <label for="rating10" class="fa fa-star"></label>
+                   </div>
+                   <p > <b>rishi</b><br></P>
+                    <div class="d-flex">
+                    <span><img id="logo" class="mx-2" src="pngwing.com (7).png"></span>
+                     <a href="https://www.google.com/search?sca_esv=3fa1fc812ffa9e0b&sxsrf=ADLYWIJd5-TBzzXhN6IYLHwnhqfypATguw:1735020493004&q=dubai&source=lnms&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J3ppPdoHI1O-XvbXbpNjYYxy9nF8_reHIdIO9ZF-Un9cO69ZIaIZQ1YmORH0rVwz31V7cvMYVmLdKwHJtwR3rObjRm9pB5iAod6pSiYJQOtrYENhj0pCi7yCC1xJKfDUdJ7y4TGLzyqwNABqBF4xl1FenkpKEKyQBthoe_zTanZtz-PywA&sa=X&ved=2ahUKEwjwkaeB37-KAxU0R2wGHQW0HpkQ0pQJegQIFBAB&biw=1920&bih=953&dpr=1"><p> google</p></a>
+                    </div>
+                     <img class="p-2 rounded-4"src="https://b1815142.smushcdn.com/1815142/wp-content/uploads/2020/10/dubai.jpg?lossy=2&strip=1&webp=1">
+                     
+                </div>
+                <div id="reviewbox-1"class="col px-1 mx-3 ">
+                      
+                    <input type="checkbox" name="" id="che3">
+                         <p id="reviewbox-text"><b> "a real sense of community nurtured"</b></p>
+                         <p>
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapie nobisi nam doloribus atque, consequuntur officiis illum!...... </p>
+                         <div id="content">
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor repellendus illo ratione? Distinctio voluptates qui, placeat optio vero sint aliquam provident, fugiat laboriosam m maxime totam, nam minima?    
+                         </p>
+                         <label for="che3" id="check-button">show less </label>
+                 </div>
+                 <label for="che3" id="check-button">read more </label>
+                 
+                 <div id="ratings-css3">
+                    <input type="radio" name="rating2" id="rating11">
+                    <label for="rating11" class="fa fa-star"></label>
+                    <input type="radio" name="rating2" id="rating12">
+                    <label for="rating12" class="fa fa-star"></label>
+                    <input type="radio" name="rating2" id="rating13">
+                    <label for="rating13" class="fa fa-star"></label>
+                    <input type="radio" name="rating2" id="rating14">
+                    <label for="rating14" class="fa fa-star"></label>
+                    <input type="radio" name="rating2" id="rating15">
+                    <label for="rating15" class="fa fa-star"></label>
+                   </div>
+                   <p > <b>rishi</b><br></P>
+                   <div class="d-flex">
+                    <div><img id="logo" class="mx-2" src="pngwing.com (7).png"></div>
+                <div class="align-items-center"><a  href="https://www.google.com/search?q=australia&oq=&gs_lcrp=EgZjaHJvbWUqCQgEECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQLhgnGOoCMgkIBxAjGCcY6gIyFQgIEC4YQxi0AhjqAhjIAxiABBiKBdIBCTE3NzJqMGoxNagCCbACAQ&sourceid=chrome&ie=UTF-8"> <p class="">google<p></a></div>
+                </div>
+                    <img class="p-2 rounded-4"src="https://www.storylines.com/hs-fs/hubfs/Blogs/Australia/shutterstock_590390942.jpg?width=800&name=shutterstock_590390942.jpg">
+                 </div>
+            </div>
+        </div>
+        <div class="container" id="email">
+            <div class="row">
+                <div class="col col-lg-12 col-md-4" id="news">
+                   <h2>Subscribe<br>Newsletter
+                </h2>
+                <P class="fs-4"> The Travel</P>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                 <input type="email" placeholder="write your email" class="border rounded  px-1 " id="email-id">
+                 <button class="btn btn-dark py-0 pb-1">subscribe</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="first,js"></script>
+</body>
+</html>

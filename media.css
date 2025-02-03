@@ -1,0 +1,93 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+    #page1 p{
+        padding-top:100px ;
+        font-size :15px !important;
+    }
+    #first-container{
+        margin-top:8px;
+    }
+    #flights{
+        font-size: 12px;
+        color:black;
+    }
+    #stays{
+        font-size: 12px;
+        color:black;
+    }
+    #city{
+        font-size:12px;
+    }
+    #select{
+        font-size: 10px; 
+    }
+    #select-2{
+        font-size: 10px;
+    }
+    #select-3{
+        font-size: 10px;
+    }
+    #select-4{
+        font-size: 10px;
+    }
+    #select-5{
+        font-size: 10px;
+    }
+    #page1 .welcome{
+        color:black;
+        font-size:10px;
+    } 
+    .container input{
+        font-size:10px;
+        max-height:30px;
+    }
+    .container .btn{
+        font-size:10px;
+        max-height:30px;
+    }
+    .welcome{
+        margin-top: 0px;
+    }
+    .welcome #main{
+        font-size:10px;
+    }
+    #grow{
+        font-size:20px;
+    }
+    #istanbul p{
+        font-size:12px;
+    }
+    #review-text{
+        font-size:10px;
+    }
+    .fs-6{
+        font-size: 8px !important;
+    }
+    #reviewbox-text{
+        font-size: 12px;
+    }
+    #reviewbox-1 p{
+        font-size: 10px;
+    }
+    label{
+        font-size:10px;
+    }
+    #news{
+        font-size:15px;
+    }
+    #box{
+      display:none;
+    }
+    #box2{
+        display:none;
+    }
+    #wood{display:none;
+    }
+    #email{
+        width:100%;
+    }
+}
+@media screen and (min-width:1000px){
+    #first-container{
+        margin-top: 40px;
+    }
+}
